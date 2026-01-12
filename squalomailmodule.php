@@ -166,8 +166,8 @@ class Squalomailmodule extends Module
 
         parent::__construct();
 
-        $this->displayName = $this->l('Squalomail');
-        $this->description = $this->l('Official Squalomail integration for PrestaShop');
+        $this->displayName = $this->trans('Squalomail');
+        $this->description = $this->trans('Official Squalomail integration for PrestaShop');
         $this->ps_versions_compliancy = array('min' => '1.6', 'max' => _PS_VERSION_);
 
         require_once $this->getLocalPath() . 'vendor/autoload.php';
@@ -836,7 +836,7 @@ class Squalomailmodule extends Module
                 );
             } catch (Exception $exception) {
                 $this->context->controller->errors[] =
-                    $this->l("Unable to fetch SqualoMail order: {$exception->getMessage()}");
+                    $this->trans("Unable to fetch SqualoMail order: {$exception->getMessage()}");
             }
         }
         return '';
