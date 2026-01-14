@@ -158,7 +158,7 @@ class Squalomailmodule extends Module
     {
         $this->name = 'squalomailmodule';
         $this->tab = 'administration';
-        $this->version = '2.0.7';
+        $this->version = '2.0.8';
         $this->author = 'Squalo';
         $this->need_instance = 1;
         $this->bootstrap = true;
