@@ -34,98 +34,98 @@ class Squalomailmodule extends Module
     public $menus = array(
         array(
             'is_root'           => true,
-            'name'              => 'Squalomail Config',
+            'name'              => 'Squalo Config',
             'class_name'        => 'squalomailmodule',
             'visible'           => true,
             'parent_class_name' => 0,
         ),
         array(
             'is_root'           => false,
-            'name'              => 'Squalomail Config',
+            'name'              => 'Squalo Config',
             'class_name'        => 'AdminSqualomailModuleConfig',
             'visible'           => true,
             'parent_class_name' => 'squalomailmodule',
         ),
         array(
             'is_root'           => false,
-            'name'              => 'Squalomail Setup Wizard',
+            'name'              => 'Squalo Setup Wizard',
             'class_name'        => 'AdminSqualomailModuleWizard',
             'visible'           => true,
             'parent_class_name' => 'squalomailmodule',
         ),
         array(
             'is_root'           => false,
-            'name'              => 'Squalomail List',
+            'name'              => 'Squalo List',
             'class_name'        => 'AdminSqualomailModuleLists',
             'visible'           => false,
             'parent_class_name' => 'squalomailmodule',
         ),
         array(
             'is_root'           => false,
-            'name'              => 'Squalomail Batches',
+            'name'              => 'Squalo Batches',
             'class_name'        => 'AdminSqualomailModuleBatches',
             'visible'           => false,
             'parent_class_name' => 'squalomailmodule',
         ),
         array(
             'is_root'           => false,
-            'name'              => 'Squalomail Carts',
+            'name'              => 'Squalo Carts',
             'class_name'        => 'AdminSqualomailModuleCarts',
             'visible'           => false,
             'parent_class_name' => 'squalomailmodule',
         ),
         array(
             'is_root'           => false,
-            'name'              => 'Squalomail Customers',
+            'name'              => 'Squalo Customers',
             'class_name'        => 'AdminSqualomailModuleCustomers',
             'visible'           => false,
             'parent_class_name' => 'squalomailmodule',
         ),
         array(
             'is_root'           => false,
-            'name'              => 'Squalomail Orders',
+            'name'              => 'Squalo Orders',
             'class_name'        => 'AdminSqualomailModuleOrders',
             'visible'           => false,
             'parent_class_name' => 'squalomailmodule',
         ),
         array(
             'is_root'           => false,
-            'name'              => 'Squalomail Products',
+            'name'              => 'Squalo Products',
             'class_name'        => 'AdminSqualomailModuleProducts',
             'visible'           => false,
             'parent_class_name' => 'squalomailmodule',
         ),
         array(
             'is_root'           => false,
-            'name'              => 'Squalomail Categories',
+            'name'              => 'Squalo Categories',
             'class_name'        => 'AdminSqualomailModuleCategories',
             'visible'           => false,
             'parent_class_name' => 'squalomailmodule',
         ),
         array(
             'is_root'           => false,
-            'name'              => 'Squalomail Stores',
+            'name'              => 'Squalo Stores',
             'class_name'        => 'AdminSqualomailModuleStores',
             'visible'           => false,
             'parent_class_name' => 'squalomailmodule',
         ),
         array(
             'is_root'           => false,
-            'name'              => 'Squalomail Sync',
+            'name'              => 'Squalo Sync',
             'class_name'        => 'AdminSqualomailModuleSync',
             'visible'           => false,
             'parent_class_name' => 'squalomailmodule',
         ),
         array(
             'is_root'           => false,
-            'name'              => 'Squalomail Sites',
+            'name'              => 'Squalo Sites',
             'class_name'        => 'AdminSqualomailModuleSites',
             'visible'           => false,
             'parent_class_name' => 'squalomailmodule',
         ),
         array(
             'is_root'           => false,
-            'name'              => 'Squalomail Automations',
+            'name'              => 'Squalo Automations',
             'class_name'        => 'AdminSqualomailModuleAutomations',
             'visible'           => false,
             'parent_class_name' => 'squalomailmodule',
@@ -159,15 +159,15 @@ class Squalomailmodule extends Module
         $this->name = 'squalomailmodule';
         $this->tab = 'administration';
         $this->version = '2.0.7';
-        $this->author = 'Squalomail';
+        $this->author = 'Squalo';
         $this->need_instance = 1;
         $this->bootstrap = true;
         $this->module_key = '793ebc5f330220c7fb7b817fe0d63a92';
 
         parent::__construct();
 
-        $this->displayName = $this->trans('Squalomail');
-        $this->description = $this->trans('Official Squalomail integration for PrestaShop');
+        $this->displayName = $this->trans('Squalo');
+        $this->description = $this->trans('Official Squalo integration for PrestaShop');
         $this->ps_versions_compliancy = array('min' => '1.6', 'max' => _PS_VERSION_);
 
         require_once $this->getLocalPath() . 'vendor/autoload.php';
